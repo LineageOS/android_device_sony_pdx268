@@ -15,11 +15,14 @@ from extract_utils.main import (
 
 namespace_imports = [
     'hardware/qcom-caf/sm8450-6.6',
+    'vendor/sony/elbe-common',
 ]
 
 blob_fixups: blob_fixups_user_type = {
     ('odm/etc/customization/XQ-GH44/config.prop', 'odm/etc/customization/XQ-GH54_EEA/config.prop', 'odm/etc/customization/XQ-GH74/config.prop'): blob_fixup()
         .regex_replace('vendor', 'odm'),
+    'vendor/lib64/libar-pal.so': blob_fixup()
+        .remove_needed('android.hardware.audio.effect-V2-ndk.so'),
 }  # fmt: skip
 
 

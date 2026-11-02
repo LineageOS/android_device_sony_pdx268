@@ -6,7 +6,7 @@ vendor/etc/acdbdata/parrot_qrd/QRD_acdb_cal.acdb
 vendor/etc/acdbdata/parrot_qrd/QRD_workspaceFileXml.qwsp
 
 # Audio
-vendor/lib64/libar-pal.so;DISABLE_DEPS
+vendor/lib64/libar-pal.so
 
 # Display configurations
 vendor/etc/displayconfig/display_id_4630946521025525378.xml
